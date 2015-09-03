@@ -1,0 +1,27 @@
+/*!
+ Theme Name:   Blank WordPress Child Theme
+ Theme URI:    https://wordpress.org/themes/whatever
+ Description:  Your Description
+ Author:       John Doe
+ Author URI:   http://johndoe.dk
+ Template:     themify-base
+ Version:      0.1
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         tag1, tag2
+ Text Domain:  blank_wordres_child_theme
+*/
+
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+/* Welcome to WordPress, Compass and Sass
+ * The welcome above is the original one from Compass.
+ * I left it as is - however you don't need the link because Compass will compile directly to style.css
+ * The stylesheet will compile to style.css in the root folder of this theme. */
+
+@import "compass/reset";
+
+/* ... add your styles below ... */
