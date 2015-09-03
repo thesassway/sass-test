@@ -1,7 +1,8 @@
 # Compass Project Prepared for WordPress
 
-In this clone of a typical Compass project, I have prepared for the production of either a typical WordPress theme or child theme.
-Edit style css accordingly. 
+This repo was made in order to get a starting point for a WordPress theme styled via SASS and Compass. 
+In a standard Compass project the .scss files are placed in the /sass folder. 
+However WordPress needs the style.css in the root folder. 
 
 # config.rb - Compass Configuration
 
@@ -17,6 +18,7 @@ sass_dir = "sass"
 images_dir = "images"
 javascripts_dir = "javascripts"
 ~~~~
+
 
 ## style.css for a theme
 
@@ -60,3 +62,17 @@ And this is *style.css* for a child theme:
  Text Domain:  twenty-fifteen-child
 */
 ~~~~
+
+# Files
+
+config.rb
+footer.php
+header.php
+index.php
+koala-config.json
+page.php
+README.md
+/sass/style.scss
+sidebar.php
+single.php
+style.css
