@@ -83,6 +83,10 @@ endif;
 
 More elaborate loops are possible, have a look at the loops in e.g. the *twentyfifteen*, *twentyfourteen* and other themes.
 
+* [The Loop](https://codex.wordpress.org/The_Loop)
+* [Template Tags](https://codex.wordpress.org/Template_Tags)
+* [Query](https://codex.wordpress.org/Template_Tags/query_posts)
+
 # Future development ideas
 
 ## Menu
