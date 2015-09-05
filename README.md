@@ -78,7 +78,6 @@ if (have_posts()) :
          the_content();
    endwhile;
 endif;
-?>
 ~~~~
 
 More elaborate loops are possible, have a look at the loops in e.g. the *twentyfifteen*, *twentyfourteen* and other themes.
@@ -87,13 +86,8 @@ More elaborate loops are possible, have a look at the loops in e.g. the *twentyf
 * [Template Tags](https://codex.wordpress.org/Template_Tags)
 * [Query](https://codex.wordpress.org/Template_Tags/query_posts)
 
-# Future development ideas
 
-## Menu
-
-*Navigare necesse est*
-
-## Widget Area
+## Widget Areas
 
 1. Define the widget in functions.php
 2. Invoke the widget in relevant file
@@ -128,6 +122,37 @@ You can have widget areas whereever you want in your theme. In this case I add t
 ~~~~
 <?php dynamic_sidebar( 'petj_sidebar_widget' ); ?>
 ~~~~
+
+# The Menu
+
+The menu is defined in functions.php and invoked in sidebar.php. You can define menu areas all over your theme. 
+
+## functions.php
+
+Here the menu is registered:
+
+~~~~
+function petj_menus() {
+  register_nav_menus(
+    array(
+      'sidebar-menu' => __( 'Sidebar Menu' ),
+      'extra-menu' => __( 'Extra Menu' )
+    )
+  );
+}
+add_action( 'init', 'petj_menus' );
+~~~~
+
+## sidebar.php
+
+And here we display the menu in the theme:
+
+~~~~
+<?php dynamic_sidebar( 'petj_sidebar_widget' ); ?>
+~~~~
+----
+
+# Further development ideas
 
 ## A Costum Hook
 
