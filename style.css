@@ -1,15 +1,17 @@
 /*!
- Theme Name:   Blank WordPress Child Theme
- Theme URI:    https://wordpress.org/themes/whatever
- Description:  Your Description
- Author:       John Doe
- Author URI:   http://johndoe.dk
- Template:     themify-base
- Version:      0.1
- License:      GNU General Public License v2 or later
- License URI:  http://www.gnu.org/licenses/gpl-2.0.html
- Tags:         tag1, tag2
- Text Domain:  blank_wordpress_child_theme
+Theme Name: SASS / Compass Skeleton
+Theme URI: http://multimusen.dk/
+Author: Per Thykjaer Jensen
+Author URI: http://multimusen.dk/
+Description: Sass and Compass Skeleton theme.
+Version: Beta
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: compass, sass, barebone, skeleton
+Text Domain: petj_sass_compass_skeleton
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
 */
 /* line 5, ../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
