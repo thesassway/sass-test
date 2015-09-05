@@ -95,7 +95,39 @@ More elaborate loops are possible, have a look at the loops in e.g. the *twentyf
 
 ## Widget Area
 
-In *sidebar.php*
+1. Define the widget in functions.php
+2. Invoke the widget in relevant file
+
+### functions.php
+
+Use something like this in functions.php:
+
+~~~~
+/* WIDGET AREAS */
+// http://codex.wordpress.org/Widgetizing_Themes
+
+function petj_widgets_define() {
+
+	register_sidebar( array(
+		'name'          => 'petj_sidebar_widget',
+		'id'            => 'petj_sidebar_widget',
+		'before_widget' => '<div id="petjSidebarWidget">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="petjSidebarWidget rounded">',
+		'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'petj_widgets_define' );
+~~~~
+
+### sidebar.php
+
+You can have widget areas whereever you want in your theme. In this case I add the widget area in sidebar.php:
+
+~~~~
+<?php dynamic_sidebar( 'petj_sidebar_widget' ); ?>
+~~~~
 
 ## A Costum Hook
 

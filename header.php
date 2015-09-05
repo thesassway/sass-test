@@ -1,8 +1,7 @@
 <?php
 /**
 * file: header.php
-* purpose: HTML5 header.
-* invoke: get_header()
+* included via: get_header()
 **/
 ?>
 <!DOCTYPE html>
@@ -18,9 +17,8 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 	
-	<!-- Jquery -->
+	<!-- Jquery ( allways before the wp_head() ) -->
 	<?php wp_enqueue_script("jquery"); ?>
-	<!-- Jquery end -->
 	
 	<!-- wp_head() hook -->
 	<?php wp_head(); ?>
@@ -28,3 +26,9 @@
 </head>
 
 <body <?php body_class(); ?>>
+    <header>
+		<hgroup>
+        <h1><?php bloginfo(); ?></h1>
+        <h2><?php bloginfo('description'); ?></h2>
+		</hgroup>
+    </header>
