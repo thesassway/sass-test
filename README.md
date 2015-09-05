@@ -1,13 +1,11 @@
-# Compass Project Prepared for WordPress
-
-## The Compass Skeleton Theme
+# The Compass Skeleton Theme for WordPress
 
 > This theme is a skeleton. The purpose of the theme is to demonstrate how to use the WordPress API. 
 > The files are prepared for styling in *Sass / Compass*. 
 
-This repo was made in order to get a starting point for a WordPress theme styled via SASS and Compass. 
+This repo was made in order to get a starting point for a WordPress theme styled via *SASS* and *Compass*. 
 In a standard Compass project the .scss files are placed in the /sass folder. 
-However WordPress needs the style.css in the root folder.
+However WordPress needs the style.css in the root folder. The solution is to edit the *config.rb*.
 
 
 ## config.rb - Compass Configuration
