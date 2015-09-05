@@ -178,3 +178,29 @@ a img.aligncenter {
   width: auto;
   z-index: 100000;
   /* Above WP toolbar. */ }
+
+/* line 20, sass/style.scss */
+body {
+  font-family: sans-serif;
+  font-size: large; }
+
+/* line 25, sass/style.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bolder;
+  font-size: 120%;
+  display: block;
+  color: white;
+  background-color: darkorange; }
+
+/* line 34, sass/style.scss */
+.newFile {
+  display: block;
+  color: whitesmoke;
+  background-color: midnightblue;
+  padding: 20px; }
+
+/* line 40, sass/style.scss */
+.loop {
+  display: block;
+  color: white;
+  background-color: chocolate; }

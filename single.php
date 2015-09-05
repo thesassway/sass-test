@@ -9,6 +9,8 @@
 
 <div id="mainContent">
 
+	<h2 class="newFile">File: single.php ( display single post )</h2>
+
 <!-- skeleton loop -->
 <?php
 if (have_posts()) :
@@ -16,6 +18,7 @@ if (have_posts()) :
         the_post();
         // here you can add the_author, the_content and many other template loop tags
         the_title('<h3>','</h3>');
+		the_content();
     endwhile;
 endif;
 ?>

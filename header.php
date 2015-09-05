@@ -13,6 +13,7 @@
 	<!-- SEO Metatags Hook -->
 	<?php // do_action('getSEO'); ?>
 	
+	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />	
 	
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
@@ -28,6 +29,7 @@
 <body <?php body_class(); ?>>
     <header>
 		<hgroup>
+		<h2 class="newFile">File: header.php "Compass Skeleton"</h2>
         <h1><?php bloginfo(); ?></h1>
         <h2><?php bloginfo('description'); ?></h2>
 		</hgroup>
