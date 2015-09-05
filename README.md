@@ -82,3 +82,17 @@ endif;
 ~~~~
 
 More elaborate loops are possible, have a look at the loops in e.g. the *twentyfifteen*, *twentyfourteen* and other themes.
+
+# Future development ideas
+
+## Menu
+
+*Navigare necesse est*
+
+## Widget Area
+
+In *sidebar.php*
+
+## A Costum Hook
+
+do_action, add_action(), function ...
