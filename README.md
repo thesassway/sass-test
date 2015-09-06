@@ -178,13 +178,13 @@ function petj_add_meta_tags() {
 print '
 
 	<!-- SEO META SECTION -->
-	<meta name="description" CONTENT="Being a skeleton for the creation of WordPress themes. The files are prepared for Compass. ">
-	<meta name="keywords" CONTENT="WordPress, Theme, Skeleton, Compass, Sass, CSS">
-	<meta name="robot" CONTENT="index,follow">
-	<meta name="copyright" CONTENT="GPLv2">
-	<meta name="author" CONTENT="Per Thykjaer Jensen">
-	<meta name="generator" CONTENT="www.onlinemetatag.com">
-	<meta name="revisit-after" CONTENT="3 days">
+	<meta name="description" content="Being a skeleton for the creation of WordPress themes. The files are prepared for Compass. ">
+	<meta name="keywords" content="WordPress, Theme, Skeleton, Compass, Sass, CSS">
+	<meta name="robot" content="index,follow">
+	<meta name="copyright" content="GPLv2">
+	<meta name="author" content="Per Thykjaer Jensen">
+	<meta name="generator" content="www.onlinemetatag.com">
+	<meta name="revisit-after" content="3 days">
 
 ';
 
