@@ -160,4 +160,17 @@ And here we display the menu in the theme:
 
 ## A Costum Hook
 
-do_action, add_action(), function ...
+* [do_action](https://codex.wordpress.org/Function_Reference/do_action)
+* [add_action](https://codex.wordpress.org/Function_Reference/add_action)
+* [hooks](http://codex.wordpress.org/Plugin_API/Hooks)
+
+A SEO Hoop.
+
+## Filters
+
+* Queries
+* Filter categories and posts
+
+## Enqueue Scripts
+
+* Bootstrap CDN

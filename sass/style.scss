@@ -17,6 +17,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import "compass/reset"; // Meyer reset
 @import "wpClasses"; // WP core classes
 
+/* The Skeleton and the Compass Styles */
 body {
 	font-family: sans-serif;
 	font-size: large;
@@ -28,9 +29,16 @@ h1,h2,h3,h4,h5,h6 {
 	display: block;
 	color: white;
 	background-color: darkorange;
+	padding: 7px;
+	padding-left: 40px;
 }
 
-// mark new files 
+ul {
+	padding-left: 45px;
+	padding-top: 8px;
+	padding-bottom: 1em;
+}
+
 .newFile {
 	display: block;
 	color: whitesmoke;
