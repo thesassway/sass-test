@@ -164,7 +164,52 @@ And here we display the menu in the theme:
 * [add_action](https://codex.wordpress.org/Function_Reference/add_action)
 * [hooks](http://codex.wordpress.org/Plugin_API/Hooks)
 
-A SEO Hoop.
+### A SEO hook samplle
+
+This hook will add metatags for SEO optimisation.
+
+#### functions.php
+
+Define your action in *functions.php*. Here's a function that will add metatags to the theme's head:
+
+~~~~
+function petj_add_meta_tags() {
+
+print '
+
+	<!-- SEO META SECTION -->
+	<meta name="description" CONTENT="Being a skeleton for the creation of WordPress themes. The files are prepared for Compass. ">
+	<meta name="keywords" CONTENT="WordPress, Theme, Skeleton, Compass, Sass, CSS">
+	<meta name="robot" CONTENT="index,follow">
+	<meta name="copyright" CONTENT="GPLv2">
+	<meta name="author" CONTENT="Per Thykjaer Jensen">
+	<meta name="generator" CONTENT="www.onlinemetatag.com">
+	<meta name="revisit-after" CONTENT="3 days">
+
+';
+
+   }
+   
+add_action( 'petj_metatags', 'petj_add_meta_tags' );
+~~~~
+
+You can intrerpret the add_action like this:
+
+~~~~
+add_action( 'NAME-OF-YOUR-ACTION', 'FUNCTION-TO-BE-EXECUTED' )
+~~~~
+
+You can execute the action wherever you will in the theme. 
+As an example I'd like some meta tags in the head in order to improve SEO.
+
+#### header.php
+
+The do_action asks WordPress to do an action. The action will execute a function, defined in *functions.php* as shown above.
+
+~~~~
+do_action( "petj_metatags" );
+~~~~
+
 
 ## Filters
 
