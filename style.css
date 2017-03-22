@@ -1,0 +1,215 @@
+@charset "UTF-8";
+/*!
+Theme Name: PETJ - the SASS / Compass Skeleton
+Theme URI: https://github.com/asathoor/sass-test
+Author: Per Thykjaer Jensen
+Author URI: http://multimusen.dk/
+Description: Sass and Compass Skeleton theme. Since the theme is a skeleton for further development, "Jolly Rodger" is the logical image. Therefore the screenshot image is the infamous “Pirate Flag of Henry Every”. Licensed under CC0 via Commons <a href=' https://commons.wikimedia.org/wiki/File:Pirate_Flag_of_Henry_Every.svg#/media/'> File:Pirate_Flag_of_Henry_Every.svg</a>
+Version: Beta
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: compass, sass, barebone, skeleton, Jolly Rodger
+Text Domain: petj_sass_compass_skeleton
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+/* line 5, ../../../../../../lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../../../lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../../../lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../../../lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../../../lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../../../lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, ../../../../../../lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, ../../../../../../lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../../../lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/* =WordPress Core classes
+-------------------------------------------------------------- */
+/* line 3, sass/_wpClasses.scss */
+.alignnone {
+  margin: 5px 20px 20px 0; }
+
+/* line 7, sass/_wpClasses.scss */
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto; }
+
+/* line 13, sass/_wpClasses.scss */
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+/* line 18, sass/_wpClasses.scss */
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+/* line 23, sass/_wpClasses.scss */
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+/* line 28, sass/_wpClasses.scss */
+a img.alignnone {
+  margin: 5px 20px 20px 0; }
+
+/* line 32, sass/_wpClasses.scss */
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+/* line 37, sass/_wpClasses.scss */
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* line 43, sass/_wpClasses.scss */
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  /* Image does not overflow the content area */
+  padding: 5px 3px 10px;
+  text-align: center; }
+
+/* line 51, sass/_wpClasses.scss */
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0; }
+
+/* line 55, sass/_wpClasses.scss */
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0; }
+
+/* line 59, sass/_wpClasses.scss */
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px; }
+
+/* line 63, sass/_wpClasses.scss */
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto; }
+
+/* line 72, sass/_wpClasses.scss */
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px; }
+
+/* Text meant only for screen readers. */
+/* line 80, sass/_wpClasses.scss */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
+
+/* line 88, sass/_wpClasses.scss */
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */ }
+
+/* The Skeleton and the Compass Styles */
+/* line 21, sass/style.scss */
+body {
+  font-family: sans-serif;
+  font-size: large; }
+
+/* line 26, sass/style.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bolder;
+  font-size: 120%;
+  display: block;
+  color: white;
+  background-color: darkorange;
+  padding: 7px;
+  padding-left: 40px; }
+
+/* line 36, sass/style.scss */
+ul {
+  padding-left: 45px;
+  padding-top: 8px;
+  padding-bottom: 1em; }
+
+/* line 42, sass/style.scss */
+.newFile {
+  display: block;
+  color: whitesmoke;
+  background-color: midnightblue;
+  padding: 20px; }
+
+/* line 48, sass/style.scss */
+.loop {
+  display: block;
+  color: white;
+  background-color: chocolate; }
